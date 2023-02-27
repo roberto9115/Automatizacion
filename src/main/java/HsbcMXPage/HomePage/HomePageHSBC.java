@@ -18,7 +18,7 @@ public class HomePageHSBC extends CommonMethods {
     @FindBy(xpath = "//span[contains(text(),'Créditos')]")
     WebElement menuCredito;
 
-    @FindBy(linkText = "Crédito de Nómina HSBC")
+    @FindBy(xpath = "/html/body/div[1]/div/header/div[3]/div/div[2]/div/div/nav/ul/li[3]/div[2]/div/div[1]/div/div[1]/div/div/ul/li[1]/a")
     WebElement menuCreditoNomina;
 
 
@@ -35,7 +35,7 @@ public class HomePageHSBC extends CommonMethods {
 
 
     public void menuCreditoNomina() throws InterruptedException {
-        Thread.sleep(20000);
+        Thread.sleep(5000);
         clickElement(menuCredito);
         clickElement(menuCreditoNomina);
         //functionMouseOver(cuentaDebito, cambiaNomina);
