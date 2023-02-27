@@ -57,7 +57,7 @@ public class HSBCMXSteps extends CommonMethods {
     }
 
     @When("Ingresar a Menu Credito Nomina")
-    public void ingresarAMenuCreditoNomina() {
+    public void ingresarAMenuCreditoNomina() throws InterruptedException {
         HomePageHSBC homePageHSBC = PageFactory.initElements(CommonMethods.driver, HomePageHSBC.class);
         homePageHSBC.menuCreditoNomina();
     }

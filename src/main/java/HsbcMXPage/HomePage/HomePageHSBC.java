@@ -34,8 +34,10 @@ public class HomePageHSBC extends CommonMethods {
     }
 
 
-    public void menuCreditoNomina(){
+    public void menuCreditoNomina() throws InterruptedException {
+//        Thread.sleep(30000);
         clickElement(menuCredito);
+        Thread.sleep(30000);
         clickElement(menuCreditoNomina);
         //functionMouseOver(cuentaDebito, cambiaNomina);
     }

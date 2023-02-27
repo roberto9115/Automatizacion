@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Actualizacion notas de credito" skipped="0" tests="1" time="302.64" timestamp="2023-02-27 11:49:24"><testcase name="Portal HSBC MX"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-CommonMethods.CommonMethods.clickElement(CommonMethods.java:87)&#13;
-HsbcMXPage.HomePage.HomePageHSBC.menuCreditoNomina(HomePageHSBC.java:38)&#13;
-HSBCMXSteps.ingresarAMenuCreditoNomina(HSBCMXSteps.java:62)&#13;
-✽.Ingresar a Menu Credito Nomina(classpath:features/hsbcCredito.feature:31)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Actualizacion notas de credito" skipped="0" tests="1" time="78.6" timestamp="2023-02-27 12:16:25"><testcase name="Portal HSBC MX"/></testsuite>
