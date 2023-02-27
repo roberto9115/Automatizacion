@@ -13,7 +13,7 @@ public class TransfiereTusDeudas extends CommonMethods {
 
     public void transfiereTusDudasNomina() throws InterruptedException {
         clickElement(btnTransfiereDudas);
-        Thread.sleep(3000);
+        Thread.sleep(10000);
         clickElement(traeTuNomina);
     }
 
