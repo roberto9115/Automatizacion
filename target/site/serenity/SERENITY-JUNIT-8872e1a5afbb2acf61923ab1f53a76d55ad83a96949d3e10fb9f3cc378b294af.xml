@@ -1,1 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Actualizacion notas de credito" skipped="0" tests="1" time="22.13" timestamp="2023-02-20 12:51:54"><testcase name="Validar Pago Tercero"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Actualizacion notas de credito" skipped="0" tests="1" time="23.28" timestamp="2023-02-24 03:56:19"><testcase name="Validar Pago Tercero"><failure message="expected:&lt;...RCAS ORIGINALES E IC[Ã“]NICAS&gt; but was:&lt;...RCAS ORIGINALES E IC[Ó]NICAS&gt;" type="java.lang.AssertionError">expected:&lt;...RCAS ORIGINALES E IC[Ã“]NICAS&gt; but was:&lt;...RCAS ORIGINALES E IC[Ó]NICAS&gt;</failure><system-err>expected:&lt;...RCAS ORIGINALES E IC[Ã“]NICAS&gt; but was:&lt;...RCAS ORIGINALES E IC[Ó]NICAS&gt;&#13;
+MercadoLibreStep.imprimirTextoMarca(MercadoLibreStep.java:66)&#13;
+✽.Imprimir Texto Marca(classpath:features/new.feature:11)&#13;
+</system-err></testcase></testsuite>

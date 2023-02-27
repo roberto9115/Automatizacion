@@ -27,6 +27,8 @@ public class FormularioRecuperarUsuario extends CommonMethods {
     @FindBy (id = "ivr_pin_no")
     WebElement pinTel;
 
+    @FindBy(xpath = "//*[@id=\"demoform\"]/div[2]/div/div[2]/div/span/input")
+    WebElement btnContinuar;
     public void FormularioIdentificacion(final String opcionIdent){
         selectElement(selectModoIdentificacion, opcionIdent);
     }
@@ -44,6 +46,9 @@ public class FormularioRecuperarUsuario extends CommonMethods {
     public void opcionTelefono(String numCuenta, String numNip){
         sendKeysElement(numeroTel, numCuenta);
         sendKeysElement(pinTel, numNip);
+    }
+    public void botonContinuar(){
+        clickElement(btnContinuar);
     }
 
 }

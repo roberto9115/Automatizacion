@@ -44,7 +44,7 @@ public class CommonMethods {
     }
 
     public  WebDriver startBrowser(final String typeBrowser, final String Url) throws MalformedURLException {
-        URL remoteUrl = new URL("http://alm-seleniumgrid2.systems.uk.hsbc:9020/wd/hub");
+        URL remoteUrl = new URL("http://192.168.20.140:4444/");
 
         try {
             if (typeBrowser.equals("ChromeL")) {
@@ -59,13 +59,9 @@ public class CommonMethods {
                 CommonMethods.driver = new FirefoxDriver(optFirefox);
 
             } else if (typeBrowser.equals("SeleniumG")) {
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--incognito");
-                CommonMethods.driver = new RemoteWebDriver(remoteUrl, chromeOptions);
-                CommonMethods.driver.manage().deleteAllCookies();
-                CommonMethods.driver.get(Url);
-                CommonMethods.driver.manage().window().maximize();
-                CommonMethods.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+                FirefoxOptions optFirefox = new FirefoxOptions();
+                optFirefox.addArguments("--incognito");
+                CommonMethods.driver = new RemoteWebDriver(remoteUrl, optFirefox);
 
 
             }

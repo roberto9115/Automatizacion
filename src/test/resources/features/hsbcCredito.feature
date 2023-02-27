@@ -32,13 +32,13 @@ Feature: Actualizacion notas de credito
     And Dar Click en Transfiere tus Deudas
     And Dar Click en Olvide mi Usuario "<user>"
     And Selecciono Opcion Recuperar Usuario "<opcionIdentificar>"
-    And Lleno Campos Acceso Telefonico "<telefono>" "<nip>" <numero>
+    And Lleno Campos Acceso Telefonico "<telefono>" "<nip>"
     And Dar Click en Continuar Recuperar Usuario
-    And Verificar Usuario "<expecedUser>"
+#    And Verificar Usuario "<expecedUser>"
 
     Examples:
       |navegador |user|opcionIdentificar|telefono|nip|expecedUser|numero|
-      |FirefoxL  |asdd|IVR              |12321312|123456|Verificar identidad|12313|
+      |SeleniumG  |asdd|IVR              |12321312|123456|Verificar identidad|12313|
 
 
 

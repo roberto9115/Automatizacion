@@ -100,4 +100,9 @@ public class HSBCMXSteps extends CommonMethods {
     }
 
 
+    @And("Dar Click en Continuar Recuperar Usuario")
+    public void darClickEnContinuarRecuperarUsuario() {
+        FormularioRecuperarUsuario formulario = PageFactory.initElements(CommonMethods.driver, FormularioRecuperarUsuario.class);
+        formulario.botonContinuar();
+    }
 }
