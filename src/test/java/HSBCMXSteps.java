@@ -4,6 +4,7 @@ import HsbcMXPage.HSBCMXPageCreditoNomina.FormularioRecuperarUsuario;
 import HsbcMXPage.HSBCMXPageCreditoNomina.Login;
 import HsbcMXPage.HSBCMXPageCreditoNomina.TransfiereTusDeudas;
 import HsbcMXPage.HomePage.HomePageHSBC;
+import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -104,5 +105,10 @@ public class HSBCMXSteps extends CommonMethods {
     public void darClickEnContinuarRecuperarUsuario() {
         FormularioRecuperarUsuario formulario = PageFactory.initElements(CommonMethods.driver, FormularioRecuperarUsuario.class);
         formulario.botonContinuar();
+    }
+
+    @After
+    public void cerrarNavegador(){
+
     }
 }
